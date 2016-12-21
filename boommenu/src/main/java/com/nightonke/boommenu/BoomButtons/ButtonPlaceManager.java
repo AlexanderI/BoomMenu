@@ -133,11 +133,11 @@ public class ButtonPlaceManager {
                 break;
             case SC_5_4:
                 a = (float) ((2 * r + im) / Math.sqrt(2));
-                positions.add(point(0, 0));
-                positions.add(point(a, -a));
-                positions.add(point(a, a));
-                positions.add(point(-a, a));
-                positions.add(point(-a, -a));
+                positions.add(point(0, -a*1.4));
+                positions.add(point(a, -a*0.7));
+                positions.add(point(a*0.7, a));
+                positions.add(point(-a*0.7, a));
+                positions.add(point(-a, -a*0.4));
                 break;
             case SC_6_1:
                 positions.add(point(-hm - 2 * r, -vm / 2 - r));
@@ -507,11 +507,11 @@ public class ButtonPlaceManager {
                 positions.add(point(0, vm + h));
                 break;
             case SC_5_4:
-                positions.add(point(-hm - w, -vm / 2 - h / 2));
-                positions.add(point(hm + w, -vm / 2 - h / 2));
-                positions.add(point(0, 0));
-                positions.add(point(-hm - w, vm / 2 + h / 2));
-                positions.add(point(hm + w, vm / 2 + h / 2));
+                positions.add(point(-hm - w * 0.9, -vm / 2 - h / 2));
+                positions.add(point(hm + w * 0.9, -vm / 2 - h / 2));
+                positions.add(point(0, -vm / 2 - h * 1.1));
+                positions.add(point(-hm - w / 1.8, vm / 2 + h / 2));
+                positions.add(point(hm + w / 1.8, vm / 2 + h / 2));
                 break;
             case SC_6_1:
                 positions.add(point(-hm - w, -vm / 2 - h / 2));
